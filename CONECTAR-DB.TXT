@@ -1,0 +1,10 @@
+postgres://rest_api_node_typescript_06rc_user:iCuHcMBwyFEO4t8ilPUc7JRqs2uYyUmM@dpg-cpacdg4f7o1s73aek0ag-a.ohio-postgres.render.com/rest_api_node_typescript_06rc?ssl=true
+//? Con cliente en pc para conectar a la db el host es:
+//? El host es :
+dpg-cpacdg4f7o1s73aek0ag-a.ohio-postgres.render.com
+//? La base de datos es:
+rest_api_node_typescript_06rc
+//? El nombre de usuario es:
+rest_api_node_typescript_06rc_user
+//? La contraseña es:
+iCuHcMBwyFEO4t8ilPUc7JRqs2uYyUmM
