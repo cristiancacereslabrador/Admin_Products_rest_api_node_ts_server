@@ -1,7 +1,9 @@
 import express from "express";
-import router from "./routes";
+import router from "./router";
 import db from "./config/db";
 import colors from "colors";
+import swaggerUi from "swagger-ui-express";
+import swaggerSpec from "./config/swagger";
 
 //**CONECTAR A BASE DE DATOS */
 export async function connectDB() {
@@ -25,9 +27,13 @@ const server = express();
 server.use(express.json());
 //**ROUTING */
 server.use("/api/products", router);
+//**ELIMINADO PARA LA DOC API */
+// server.get("/api", (req, res) => {
+//   res.json({ msg: "Desde API" });
+// });
+//**ELIMINADO PARA LA DOC API */
 
-server.get("/api", (req, res) => {
-  res.json({ msg: "Desde API" });
-});
+//? DOCS
+server.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 export default server;
